@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>hardware.h</itemPath>
+      <itemPath>lcd.h</itemPath>
+      <itemPath>calibration.h</itemPath>
+      <itemPath>pid.h</itemPath>
+      <itemPath>ee.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <itemPath>bootloader.lkr</itemPath>
+      <itemPath>m_bootloader.lkr</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>lcd.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>calibration.c</itemPath>
+      <itemPath>pid.c</itemPath>
+      <itemPath>ee.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="no_bootloader" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F2550</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>PICkit2PlatformTool</platformTool>
+        <languageToolchain>C18</languageToolchain>
+        <languageToolchainVersion></languageToolchainVersion>
+        <platform>4</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C18>
+        <property key="code-model" value="mS"/>
+        <property key="data-model" value="Oa-"/>
+        <property key="default-char-unsigned" value="false"/>
+        <property key="enable-all-optimizations" value="true"/>
+        <property key="enable-int-promotion" value="false"/>
+        <property key="enable-multi-bank-stack-model" value="false"/>
+        <property key="enable-ob" value="true"/>
+        <property key="enable-od" value="true"/>
+        <property key="enable-om" value="true"/>
+        <property key="enable-on" value="true"/>
+        <property key="enable-op" value="true"/>
+        <property key="enable-opa" value="true"/>
+        <property key="enable-or" value="true"/>
+        <property key="enable-os" value="true"/>
+        <property key="enable-ot" value="true"/>
+        <property key="enable-ou" value="true"/>
+        <property key="enable-ow" value="true"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="optimization-master" value="Enable all"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="procedural-abstraction-passes" value="0"/>
+        <property key="storage-class" value="sca"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="2"/>
+      </C18>
+      <C18-AS>
+        <property key="cross.reference.file" value=""/>
+        <property key="default.radix" value="HEX"/>
+        <property key="enable.case.sensitivity" value="true"/>
+        <property key="hex.output.format" value="INHX32"/>
+        <property key="preprocessor.macros" value=""/>
+        <property key="warning.level" value="0"/>
+      </C18-AS>
+      <C18-LD>
+        <property key="cod-file" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="hex-output-format" value="INHX32"/>
+        <property key="map-file" value=""/>
+      </C18-LD>
+      <C18LanguageToolchain>
+        <property key="extended-mode" value="false"/>
+        <property key="extended-mode-mcc18" value="false"/>
+        <property key="extended-mode-mpasm" value="false"/>
+        <property key="extended-mode-mplink" value="false"/>
+        <property key="stack-analysis" value="false"/>
+        <property key="stack-analysis-mcc18" value="false"/>
+        <property key="stack-analysis-mplink" value="false"/>
+      </C18LanguageToolchain>
+      <PICkit2PlatformTool>
+        <property key="pk2settings.3state" value="false"/>
+        <property key="pk2settings.preserveee" value="false"/>
+        <property key="pk2settings.setvddvoltage" value="5.00"/>
+        <property key="pk2settings.userpgmexec" value="true"/>
+        <property key="pk2settings.usetargetpower" value="true"/>
+      </PICkit2PlatformTool>
+      <item path="bootloader.lkr" ex="true" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+      <item path="m_bootloader.lkr" ex="true" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+    </conf>
+    <conf name="support_diolan_bootloader" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F2550</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>Simulator</platformTool>
+        <languageToolchain>C18</languageToolchain>
+        <languageToolchainVersion></languageToolchainVersion>
+        <platform>4</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C18>
+        <property key="code-model" value="mS"/>
+        <property key="data-model" value="Oa-"/>
+        <property key="default-char-unsigned" value="false"/>
+        <property key="enable-all-optimizations" value="true"/>
+        <property key="enable-int-promotion" value="false"/>
+        <property key="enable-multi-bank-stack-model" value="false"/>
+        <property key="enable-ob" value="true"/>
+        <property key="enable-od" value="true"/>
+        <property key="enable-om" value="true"/>
+        <property key="enable-on" value="true"/>
+        <property key="enable-op" value="true"/>
+        <property key="enable-opa" value="true"/>
+        <property key="enable-or" value="true"/>
+        <property key="enable-os" value="true"/>
+        <property key="enable-ot" value="true"/>
+        <property key="enable-ou" value="true"/>
+        <property key="enable-ow" value="true"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="optimization-master" value="Enable all"/>
+        <property key="preprocessor-macros"
+                  value="PROGRAMMABLE_WITH_USB_DIOLAN_BOOTLOADER"/>
+        <property key="procedural-abstraction-passes" value="0"/>
+        <property key="storage-class" value="sca"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="2"/>
+      </C18>
+      <C18-AS>
+        <property key="cross.reference.file" value=""/>
+        <property key="default.radix" value="HEX"/>
+        <property key="enable.case.sensitivity" value="true"/>
+        <property key="hex.output.format" value="INHX32"/>
+        <property key="preprocessor.macros" value=""/>
+        <property key="warning.level" value="0"/>
+      </C18-AS>
+      <C18-LD>
+        <property key="cod-file" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="hex-output-format" value="INHX32"/>
+        <property key="map-file" value=""/>
+      </C18-LD>
+      <C18LanguageToolchain>
+        <property key="extended-mode" value="false"/>
+        <property key="extended-mode-mcc18" value="false"/>
+        <property key="extended-mode-mpasm" value="false"/>
+        <property key="extended-mode-mplink" value="false"/>
+        <property key="stack-analysis" value="false"/>
+        <property key="stack-analysis-mcc18" value="false"/>
+        <property key="stack-analysis-mplink" value="false"/>
+      </C18LanguageToolchain>
+      <Simulator>
+        <property key="animationupdates.realtimewatchupdates" value="false"/>
+        <property key="animationupdates.steptime" value=""/>
+        <property key="animationupdates.updatetime" value=""/>
+        <property key="breakoptions.coreerrors" value="Break"/>
+        <property key="breakoptions.corewarnings" value="Break"/>
+        <property key="breakoptions.peripheralerrors" value="Break"/>
+        <property key="breakoptions.peripheralwarnings" value="Break"/>
+        <property key="breakoptions.stimulusmessages.notes" value="Break"/>
+        <property key="breakoptions.stimulusmessags.errors" value="Break"/>
+        <property key="breakoptions.stimulusmessags.warnings" value="Break"/>
+        <property key="breakoptions.wdtwarnings" value="Break"/>
+        <property key="codecoverage.enabled" value="Disable"/>
+        <property key="codecoverage.enableoutputtofile" value="false"/>
+        <property key="codecoverage.outputfile" value=""/>
+        <property key="oscillator.auxfrequency" value="120"/>
+        <property key="oscillator.auxfrequencyunit" value="Mega"/>
+        <property key="oscillator.frequency" value="16"/>
+        <property key="oscillator.frequencyunit" value="Mega"/>
+        <property key="performancedata.show" value="false"/>
+        <property key="tracecontrol.select" value="0"/>
+        <property key="tracecontrol.timestamp" value="2"/>
+        <property key="tracecontrol.tracebufmax" value="54600"/>
+        <property key="tracecontrol.tracefile" value="/Users/pjkim/mpdeftrace.log"/>
+        <property key="tracecontrol.traceresetonrun" value="false"/>
+        <property key="uart1io.output" value="window"/>
+        <property key="uart1io.outputfile" value=""/>
+        <property key="uart1io.uartioenabled" value="false"/>
+      </Simulator>
+      <item path="m_bootloader.lkr" ex="true" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+    </conf>
+    <conf name="support_mchip-hid_bootloader" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC18F2550</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>PICkit2PlatformTool</platformTool>
+        <languageToolchain>C18</languageToolchain>
+        <languageToolchainVersion></languageToolchainVersion>
+        <platform>4</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <C18>
+        <property key="code-model" value="mS"/>
+        <property key="data-model" value="Oa-"/>
+        <property key="default-char-unsigned" value="false"/>
+        <property key="enable-all-optimizations" value="true"/>
+        <property key="enable-int-promotion" value="false"/>
+        <property key="enable-multi-bank-stack-model" value="false"/>
+        <property key="enable-ob" value="true"/>
+        <property key="enable-od" value="true"/>
+        <property key="enable-om" value="true"/>
+        <property key="enable-on" value="true"/>
+        <property key="enable-op" value="true"/>
+        <property key="enable-opa" value="true"/>
+        <property key="enable-or" value="true"/>
+        <property key="enable-os" value="true"/>
+        <property key="enable-ot" value="true"/>
+        <property key="enable-ou" value="true"/>
+        <property key="enable-ow" value="true"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="optimization-master" value="Enable all"/>
+        <property key="preprocessor-macros"
+                  value="PROGRAMMABLE_WITH_MICROCHIP_USB_HID_BOOTLOADER"/>
+        <property key="procedural-abstraction-passes" value="0"/>
+        <property key="storage-class" value="sca"/>
+        <property key="verbose" value="false"/>
+        <property key="warning-level" value="2"/>
+      </C18>
+      <C18-AS>
+        <property key="cross.reference.file" value=""/>
+        <property key="default.radix" value="HEX"/>
+        <property key="enable.case.sensitivity" value="true"/>
+        <property key="hex.output.format" value="INHX32"/>
+        <property key="preprocessor.macros" value=""/>
+        <property key="warning.level" value="0"/>
+      </C18-AS>
+      <C18-LD>
+        <property key="cod-file" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="hex-output-format" value="INHX32"/>
+        <property key="map-file" value=""/>
+      </C18-LD>
+      <C18LanguageToolchain>
+        <property key="extended-mode" value="false"/>
+        <property key="extended-mode-mcc18" value="false"/>
+        <property key="extended-mode-mpasm" value="false"/>
+        <property key="extended-mode-mplink" value="false"/>
+        <property key="stack-analysis" value="false"/>
+        <property key="stack-analysis-mcc18" value="false"/>
+        <property key="stack-analysis-mplink" value="false"/>
+      </C18LanguageToolchain>
+      <PICkit2PlatformTool>
+        <property key="pk2settings.3state" value="false"/>
+        <property key="pk2settings.preserveee" value="false"/>
+        <property key="pk2settings.setvddvoltage" value="5.00"/>
+        <property key="pk2settings.userpgmexec" value="true"/>
+        <property key="pk2settings.usetargetpower" value="true"/>
+      </PICkit2PlatformTool>
+      <item path="bootloader.lkr" ex="true" overriding="false">
+        <C18>
+        </C18>
+        <C18-AS>
+        </C18-AS>
+        <C18-LD>
+        </C18-LD>
+        <C18LanguageToolchain>
+        </C18LanguageToolchain>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 77
+default
+support_diolan_bootloader
+no_bootloader
+support_mchip-hid_bootloader
+
+END
